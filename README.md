@@ -3,9 +3,9 @@
 ## Website created as part of Learning People "Full Stack Software Developer" course.
 
 - Programming languages
--   HTML5
--   CSS3
--   JavaScript
+  - HTML5
+  - CSS3
+  - JavaScript
 - Mobile friendly
 - W3C Validated
 - UI/UX guidelines followed
