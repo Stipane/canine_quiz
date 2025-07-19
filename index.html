@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+>
+    <link rel="stylesheet" href="./styles.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>My Quiz App</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="logo">
+        <img src="./images/dog_4540789.png" alt="Logo">
+      </div>
+      <div class="title">
+        <h1>Pop Quiz</h1>
+        <p>Theme - Canine</p>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header Section End -->
+    <!-- Main Section - Quiz instructions -->
+    <main id="main" class="main hidden">
+      <h2 class="main-title">How to complete this Quiz</h2>
+      <p class="gen-info">General Info</p>
+      <p class="main-p">
+        This quiz is a multiple choice quiz. You will be presented with a
+        question and four possible answers. You must select an answer to proceed
+        to the next question. You can only select one answer per question. Once
+        you have completed the quiz, you will be presented with your score.
+      </p>
+      <p class="main-p">
+        The quiz consists of (11) questions with a canine theme. The quiz is not
+        for analytical purposes, it is a project for a web development course.
+        No personal information is gathered/used.
+      </p>
+      <p>To start the quiz, click 'Start Quiz' below.</p>
+      <p class="gen-info">Navigation</p>
+      <p class="main-p">
+        To navigate through the questions, click the 'Next" button once you
+        answered the question. You must select an answer to enable the 'Next'
+        button. You can click 'Previous Question' button to go back and change
+        an answer.
+      </p>
+      <p class="gen-info">Results</p>
+      <p class="main-p">
+        Results will displayed on screen once the last question is answered. The
+        results will be shown as a fraction e.g.
+        <span class="diagonal-fractions">11/15</span> and a percentage %. All
+        your answers will be displayed along with the correct answers.
+      </p>
+      <p class="gen-info">After Completion</p>
+      <p class="main-p">
+        Once the quiz has been completed and a score has been displayed, the
+        window can be closed. No data is recorded. You can take the quiz as many
+        times as you like. Just click 'Restart Quiz'.
+      </p>
+    </main>
+    <!-- Main Section End -->
+    <!-- Quiz Section -->
+    <div class="container">
+      <div id="quiz-container">
+        <!-- This section is initially hidden ⬇️ -->
+        <div id="question-container" class="hidden">
+          <h2 id="question-text"></h2>
+          <ul id="choices-list">
+            <!-- Choices will be added dynamically here -->
+          </ul>
+          <button id="prev-btn" class="hidden">Previous Question</button>
+          <button id="next-btn" class="hidden">Next Question</button>
+          <button id="submit-btn" class="hidden">Submit</button>
+        </div>
+        <div id="result-container" class="hidden">
+          <!-- <h2 class="score-title">Score:</h2> -->
+          <h2 id="score"></h2>
+          <div class="answers">
+            <div id="userAnswer">Your Answers:</div>
+            <div id="quizAnswer">Correct Answers:</div>
+          </div>
+          <div id="thank-you"></div>
+          <button id="restart-btn">Restart Quiz</button>
+        </div>
+        <!-- This section is initially hidden ⬆️ -->
+        <button id="start-btn">Start Quiz</button>
+      </div>
+    </div>
+    <!-- Quiz Section End -->
+    <!-- Footer Section -->
+    <footer class="footer">
+      <p>
+        Copyright &copy; &nbsp;<a class="emweb" href="https://emweb.net.au"
+          >EmWeb&nbsp;</a
+        >
+        <span class="year"></span>
+      </p>
+      <p>All rights reserved.</p>
+    </footer>
+    <!-- Footer Section End -->
+    <script src="./script.js"></script>
+  </body>
+</html>
