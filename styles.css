@@ -443,9 +443,8 @@ Media Queries for Responsive Design
     margin: 70px 0;
   }
 
-  .formWrapper form {
-    width: 90%;
-    padding: 20px;
+  .formWrapper {
+    width: 100%;
   }
 
   .footer {
