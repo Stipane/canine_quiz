@@ -319,7 +319,7 @@ input {
 Media Queries for Responsive Design
 */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header {
     grid-template-columns: 1fr;
     justify-content: center;
@@ -329,6 +329,16 @@ Media Queries for Responsive Design
     flex-direction: column;
     gap: 20px;
     padding: 0;
+  }
+
+  .container {
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    background-color: #256029;
   }
 
   #quiz-container {
@@ -355,26 +365,32 @@ Media Queries for Responsive Design
   #choices-list li {
     align-items: center;
     padding: 10px;
-
   }
 
   #question-container {
     width: 100%;
     min-height: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
   }
 
   #question-container h2 {
     font-size: 1.5rem;
+
   }
 
-  #prev-btn {
-    width: 100%;
+  #prev-btn, #next-btn {
+    width: 60%;
     margin-bottom: 10px;
+    margin: auto;
   }
 
   #submit-btn {
-  padding: 10px;
-}
+    padding: 10px;
+    width: 60%;
+    margin: auto;
+  }
   .answers {
     width: 100%;
     gap: 10px;
@@ -408,13 +424,33 @@ Media Queries for Responsive Design
     width: 90%;
   }
 
+  .aboutContent {
+    width: 100%;
+    height: auto;
+  }
+
+  .aboutWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
   .footer {
     flex-direction: column;
     font-size: 1rem;
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .answers {
     font-size: 0.9rem;
   }
