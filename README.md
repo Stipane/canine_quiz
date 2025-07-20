@@ -6,7 +6,7 @@
   - HTML5
   - CSS3
   - JavaScript
-- Mobile friendly
+- Mobile responsive
 - W3C Validated
 - UI/UX guidelines followed
 
