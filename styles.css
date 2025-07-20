@@ -348,6 +348,13 @@ Media Queries for Responsive Design
     justify-content: center;
   }
 
+  #start-btn {
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+
   #choices-list {
     display: flex;
     flex-direction: column;
