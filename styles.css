@@ -338,7 +338,6 @@ Media Queries for Responsive Design
     align-items: center;
     padding: 0;
     width: 100%;
-    background-color: #256029;
   }
 
   #quiz-container {
@@ -441,7 +440,12 @@ Media Queries for Responsive Design
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 70px 0;
+  }
+
+  .formWrapper form {
+    width: 90%;
+    padding: 20px;
   }
 
   .footer {
