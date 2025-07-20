@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -42,7 +44,6 @@ body {
   align-items: center;
   list-style-type: none;
 }
-
 
 .nav ul li a {
   text-decoration: none;
@@ -177,11 +178,10 @@ body {
 }
 
 .answers {
-display: flex;
-justify-content: center;
-gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
-
 
 .correct {
   background-color: #c8e6c9; /* light green */
@@ -220,7 +220,7 @@ gap: 20px;
 }
 
 #thank-you {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 /* Contact Section styles */
@@ -315,37 +315,72 @@ input {
   color: white;
 }
 
+/*
+Media Queries for Responsive Design
+*/
+
 @media (max-width: 768px) {
   .header {
     grid-template-columns: 1fr;
+    justify-content: center;
   }
 
   .nav ul {
     flex-direction: column;
     gap: 20px;
+    padding: 0;
   }
 
-    #quiz-container {
+  #quiz-container {
     width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
-    #question-container {
+  #choices-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75rem;
+  }
+
+  #choices-list {
+    font-size: 0.75rem;
+    justify-content: center;
+    padding: 0;
+  }
+
+  #choices-list li {
+    align-items: center;
+    padding: 10px;
+
+  }
+
+  #question-container {
     width: 100%;
+    min-height: auto;
   }
 
-    #question-container h2 {
+  #question-container h2 {
     font-size: 1.5rem;
   }
 
-    .answers {
-    width: 50%;   
+  #prev-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #submit-btn {
+  padding: 10px;
+}
+  .answers {
+    width: 100%;
     gap: 10px;
   }
 
-    #score {
+  #score {
     width: 100%;
     font-size: 1.5rem;
   }
@@ -354,17 +389,17 @@ input {
   #quizAnswer {
     text-align: center;
     background-image: none;
-    max-width: 60%;
+    max-width: 100%;
   }
 
-    #result-container {
+  #result-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-    #thank-you {
+  #thank-you {
     text-align: center;
     font-size: 1rem;
   }
