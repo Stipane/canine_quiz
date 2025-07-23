@@ -10,4 +10,4 @@
 - W3C Validated
 - UI/UX guidelines followed
 
-The home page describes how to use the site and complete the quiz. Theres is a page that has a brief description of the creator and also a contact page for support & feedback.
+The home page describes how to use the site and complete the quiz. There is a page that has a brief description of the creator and also a contact page for support & feedback.
